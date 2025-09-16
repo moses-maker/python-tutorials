@@ -1,0 +1,43 @@
+THIRD PARTY MODULES
+>Third-party modules are packages created by the Python
+community and not part of the standard library/built-in
+functions.
+> We usually store the list of all the third party modules
+or packages your project depends on along with there versions
+in a file called "requirements.txt"
+How to generate and store the packages/dependencies
+    pip freeze > requirements.txt
+
+> To install the dependencies in another computer or machine
+    pip install -r requirements.txt 
+
+To install third party modules use the following command
+> pip install <package-name>
+
+Virtual environment
+- A virtual environment is a self-contained directory that
+contains a separate Python installation, along with its
+own packages and dependencies
+Important
+a) Isolate project dependencies from the global Python installation
+b) Avoid version conflicts between projects.
+c) Easily share and reproduce environments using "requirements.txt"
+
+How to activate a virtual environment
+1. Create the virtual environment
+        virtualenv "environment_name"
+        - This is a third party module installed with pip
+        - More advanced features and options
+        - it can create virtual environment for different python versions
+
+        python -m venv "environment_name"
+        - Built-in
+        - Only works with python 3.3+
+        - Limited
+2. Activating virtual environment
+        - To activate the virtual environment
+            environment_name\Scripts\activate
+
+3. To create a file
+        - echo > filename.py
+

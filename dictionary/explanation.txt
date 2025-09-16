@@ -1,0 +1,43 @@
+DICTIONARY
+> Its a collection of unordered set of key:value pairs.
+
+
+Features
+a) The keys must be unique within the dictionary.
+b)They are constructed using curly brackets  { }.
+    Inside the curly bracket you include a list of key:value pairs
+    separated by commas.
+c) Each key is separated from its value using full colon (:)
+d) Words on the left are keys and words on the right are values.
+e) List are indexed by range of numbers while dictionaries are indexed by keys.
+>The syntax for dictionary:
+dictionary_name = {key1:value1, key2:value2, key3:value3}
+
+Accessing and modifying dictionaries
+> If you want to access a value in a dictionary, you would use the following syntax:
+
+    dictionary_name[key]
+
+> To modify value in a  dictionary we us the key 
+    dictionary_name[key] = value
+
+Dictionary built-in functions
+a) len() - return the number of items in a dictionary
+b) all() - Return the boolean True if all keys are True else False
+c) any() - return True if any of the key is True
+d) sorted() - returns sorted list of items.
+
+Dictionary Methods
+a) clear() - removes all items from dictionary
+b) fromkeys() - creates a new dictionary from a given sequence of elements
+with a value provided by users
+c) items() - returns a new view of dictionary's key and value pairs as tuples.
+d) get() - returns the value associated with the specified key in the dictionary
+e) keys() - returns a new view consisting of all keys in the dictionary
+f) pop() - removes the key from the dictionary and returns its value
+g) popitem() - removes and returns (key, value) pair tuple from dictionary.
+h) update() - updates the dictionary with the key:value pairs from other dictionary
+object and it returns None.
+i) values() - returns a new view consisting of all values in dictionary.
+
+

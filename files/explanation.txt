@@ -1,0 +1,159 @@
+FILES
+> It's a common storage unit in a computer, where programs and data are written and 
+read from.
+> Used to represent things which are written e.g. documents and things which are not 
+written e.g. pictures, videos.
+
+.mp4, .mp3, .docx, .txt, 
+
+File extention 
+> It's a group of characters after period(.) that makes up entire file name.
+> File extention helps operating system like windows, determine which program will be 
+associated with the file.
+e.g document.docx   => Microsoft Word
+    exmaple.html
+    index.py
+
+Types of files
+Python supports two types of files:
+a) Text files
+> They contain data  stored as series of bits(0s and 1s)whereby the bits in text files
+ represent characters. They are less prone ro corruption.
+>Examples of text files extention:
+i) Web standards: html, xml, css, svg, json
+ii) source code: c, cpp, h, cs, js, py, java, rb, pl, php, sh
+iii) Documents: txt, tex, markdown, asciidoc, rtf, ps
+iv) Configuration: ini, cfg, rc, reg
+v) Tabular data: csv, tsv.
+
+test.txt
+test.mp4
+
+b) Binary files
+> They contain data  stored as series of bits(0s and 1s)whereby the bits in binary files represent custorm data.
+> Error prone.
+>>Examples of binary files extention
+i) images: jpg, png, gif, bmp, tiff, psd
+ii) videos: mp4, mkv, avi, mov, mpg, vob
+iii) Audio: mp3, aac, wav, flac, ogg, mka, wma
+iv) Documentaries: pdf, doc, xls, ppt, docx, odt
+v) Executables: exe, dll, so, class
+vi) Database: mdb, accde, frm, sqlite
+
+Creating and Reading text files
+
+print()
+
+open() 
+>IT is reponsible for creating a filename
+The syntax:
+    file = open("file.extention", "mode")
+
+    file_handler = open("moses.txt", "r")
+
+    > All files must be opened before they can be read or written to.
+    > Python has a built in function called open() that is used to create 
+    or read files.
+
+    modes
+    > "r" - Opens the file in read only mode and this is the default mode.
+    > "w" - Opens the file for writing. If a file already exists,then it’ll get overwritten. 
+    If the file does not exist, then it creates a new file.
+    > "a" - Opens the file for appending data at the end of the file automatically. If the file does not
+     exist it creates a new file.
+    > "r+"- Opens the file for both reading and writing.
+    > "w+"-Opens the file for reading and writing. If the file does not exist it creates a new file. 
+    If a file already exists then it will get overwritten.
+    > "a+" - Opens the file for reading and appending. If a file already exists, the data is appended. 
+    If the file does not exist it creates a new file.
+    > "x" - Creates a new file. If the file already exists, the operation fails.
+    > "rb" - Opens the binary file in read-only mode.
+    > "wb"- Opens the file for writing the data in binary format.
+    > "rb+" - Opens the file for both reading and writing in binary format.
+
+File close() method
+> Opening a file consume alot of system resources, depending on file mode, other
+programs might not be able to access it.
+> It is important to close the file once the processing is completed 
+
+>The syntax:
+    file_handler.close()
+
+    e.g.
+    file_handler = open("filename.txt", "w")
+    file_handler.write("Hello world")
+    file_handler.close()
+
+
+FILE METHODS TO READ AND WRITE DATA 
+a) read()
+    file_handler.read(size) - 
+    This method is used to read the contents of a file up to a size and return
+    it as a string. The argument size is optional, and, if it is not specified,
+    then the entire contents of the file will be read and returned.
+
+b) readline()
+    file_handler.readline()
+    This method is used to read a single line in file.
+
+c) readlines()
+    file_handler.readlines()
+    This method is used to read all the lines of a file as allist items
+
+d) write()
+    file_handler.write(string)
+    This method will write the contents of the string to the file, returning
+    the number of characters written. If you want to start a new line,
+    you must include the new line character.
+
+e) writelines()
+    file_handler.writelines(sequence)
+    This method will write a sequence of strings to the file.
+
+f) tell()
+    file_handler.tell()
+    This method returns an integer giving the file handler’s current position
+    within the file, measured in bytes from the beginning of the file.
+
+g) seek()
+    file_handler.seek(offset, from_what)
+    > This method is used to change the file handler’s position. The position is 
+    computed from adding offset to a reference point. The reference point is selected
+     by the from_what argument.
+    > A from_what value of 0 measures from the beginning of the file, 1 uses the 
+    current file position, and 2 uses the end of the file as the reference point.
+
+
+
+FILE METHODS
+> strip()
+usage : string.strip()
+It removes leading and trailing whitespace(spaces, tabs, newlines) or specified characters from 
+both ends of the string.
+
+text = "  Hello, World!  "
+clean_text = text.strip()
+print(clean_text) 
+
+
+rstrip()
+Removes trailing characters (whitespace by default) from the string.
+
+text = "  Hello, World!  "
+clean_text = text.rstrip()
+print(clean_text)  # Output: "  Hello, World!"
+
+
+lstrip()
+Description: Removes leading characters (whitespace by default) from the string.
+text = "  Hello, World!  "
+clean_text = text.lstrip()
+print(clean_text)  # Output: "Hello, World!  "
+
+split()
+It is used in python to split a string into a list where each word is a list item
+By default it splits the string at spaces. 
+
+
+
+

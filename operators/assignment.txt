@@ -1,0 +1,18 @@
+ASSIGNMENT OPERATORS (=)
+> It is messenge that is used to assign a values on the right to the valid identifier which
+is the address of a memory location on the left.
+> Example:  h = 5
+
+compound assignment
+> Assignment operators can be combined with arithmetics operators to form a new branch of
+operators called compound assignment operators. They include:
+a) +=   addition equal to
+b) -=   subtraction equal to
+c) *= multiplication equal to
+d) /= division equal to
+e) **= exponent equal to
+f) //= floor division equal to
+g) %= modulus equal to
+
+
+total = 100

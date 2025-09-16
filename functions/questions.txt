@@ -1,0 +1,14 @@
+Questions
+a) Write a program to find the largest of
+ three numbers using functions.
+
+b) Write a Python function named area that 
+finds the area of a pentagon.
+
+c) Write a program using functions to do the following tasks:
+i). Convert milliseconds to hours, minutes and seconds.
+ii). Compute a sales commission, given the sales amount and 
+the commission rate.
+iii. Convert Celsius to Fahrenheit.
+iv). Compute the monthly payment, given the loan amount, 
+number of years and the annual interest rate.

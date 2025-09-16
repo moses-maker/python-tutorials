@@ -1,0 +1,170 @@
+FUNCTIONS
+> They are used when you have a block of statement that needs
+to be executed multiple number of times within the program
+
+Functions have two categories
+a) Built-in Functions
+> They are built inside the interpreter
+> The way built in function are used is in the form of function call.This is because their 
+function definition 
+is hidden or implemented within the interpreter
+> This is a function whose function definition is hidden that is inbuilt in the 
+interpreter.
+> Ex    amples built-in function calls.
+input(), 
+
+test = input("Enter the marks?")
+
+
+print(), 
+range(start, stop, step), 
+min()
+max()
+divmod()
+pow(x, y)
+len()
+
+print("hello")
+
+print("Hello world")
+
+
+b) User defined Functions
+> These are function that you create by yourself.
+> User defined functions are divided into two parts.
+
+i) function definition
+ii) function calling
+
+
+i)Function definition
+
+> The syntax for function definition:
+
+def function_name(paremeters1, parameter2, parameter3):
+    statement(s)/block
+
+parameter = 10
+
+def function_name():
+    statement(s)/block
+
+Function definition
+> function definition consists of the (def) keyword followed 
+by
+i) function_name(paremeters1, parameter2, parameter3):
+> a function_name  has to be a valid identifier, used in 
+function definition.
+> It is used during function calling.
+> function name is always followed by brackets. The brackets
+    def function_name():
+        statement
+can be empty or with variables called parameters.
+> A parameter is a variable that holds the value supplied
+as (argument) during function calling
+> After the brackets the full colon must be there, without It
+you will be prompted with syntax error.
+> The function definintion cannot be executed without 
+function call.
+> The statements forms the body of the function or block of
+the function.In order for the block to be executed the function
+must be called.
+> it must be indented four spaces or one tab
+
+Function calling
+> Defining a function does not execute it, it simply names it and specifies
+what to do when the function called.
+> The syntax for function call is
+
+    function_name(argument1, argument2, argument3)
+
+    function_name()
+
+> function_name is always supplied during calling so that the right
+function definition with similar name can be called.
+> arguments are values supplied during function calling.
+> THe number of arguments must be same as the number of parameters.
+> A function without parameters should not be supplied with arguments.
+
+
+Two major categories of Functions
+a) void function
+> These are functions whose last statement is print(value) 
+
+b) function with return value
+> The functions whose last statement is a return value
+
+Sub categories of functions.
+a) standalone function
+b) module functions
+c) Default parameter
+d) keyword argument    
+e) parameter function
+f) *args and **kwargs function
+g) command line argument
+
+
+
+a) standalone function
+> This are function which cannot called as modules 
+to other program, they are executed individually.
+> When a program is executed as a stand alone, python
+defines specials variables like 
+i) Sets the __name__ variables to have string called 
+"__main__". the entire assignment is performed in 
+if statement
+
+    if __name__ == "__main__":
+        main()
+
+The code above checks wether their is something inside the
+main() function which is built-in. if found, the main()
+function is called.
+
+The function call for your function definition should be 
+residing inside the main() function.
+
+
+b) function as a module
+> modules are reusable libraries of code having extention of .py
+> a module is a definition of what the function, where it is to 
+be implemented in another program file.
+> the keyword 
+        import module_name
+
+        >It is used to import a certain module into the current file
+        to use its functionalities.
+
+> To download you use the 
+    pip install module_name
+
+
+
+
+
+f)*args and **kwargs function
+> *args and **kwargs are mostly used as parameters in function definitions. 
+> *args and **kwargs allows you to pass a variable number of arguments to the calling function. 
+> Here variable number of arguments means that the user does not know in advance about how
+many arguments will be passed to the calling function.
+> *args as parameter in function definition allows you to pass a non-keyworded, variable length 
+tuple argument list to the calling function.
+> **kwargs as parameter in function definition allows you to pass keyworded,
+variable length dictionary argument list to the calling function. *args must come after all
+the positional parameters and **kwargs must come right at the end.
+
+args_kwargs.py
+
+
+def cheese_shop(kind, *args, **kwargs):
+    print(f"Do you have any {kind}")
+    print(f"I am sorry we're all out of {kind}")
+
+    for arg in args:
+        print(arg)
+
+    for kw in args:
+        print(kw, ":", kwargs[kw])
+
+
+cheese_shop("limburger", "it's very runny, sir", "its really rainy", shop_keepr ="Micheal")

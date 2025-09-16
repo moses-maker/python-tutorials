@@ -1,0 +1,13 @@
+COMPARISON OPERATORS
+They are used in evaluating two values and the result is
+usually the boolean expression? (True or False)
+
+boolean datatypes  = True or False
+
+a) == equal to
+b) != Not equal to
+c) > greater than
+d) < less than
+e) >= greater than or equal to
+f) <= less than or equal to
+

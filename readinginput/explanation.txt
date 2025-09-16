@@ -1,0 +1,50 @@
+READING INPUT
+> In python input() function is used to take data from user when the program is running
+> Thier are several ways of initializing variable or assigning values to variables
+a) When the program is not running(static initialization)
+> To initialize the variables with values when the program is not running
+ we use the assignment operator ( = )
+ Example:     total = 100
+
+b) When the program is running (dynamic initialization)
+> To initialize the variables when the program is running we use the 
+input() function
+Examples:
+    variable_name = input("prompt")
+
+> The "prompt?" statament is what is displayed on the screen indicating to the user  a value
+ needs to be entered through the keyboard. 
+> After the user enters a value and presses enter key, the value is extracted and stored in
+ the address represented by the variable_name.
+> The value is treated as a string automatically by default.
+>Some of the ways to force the values entered from being treated as a certain type
+we use a technique called - typecasting.
+
+
+Type casting
+> This is forcing values to be converted to a different data type.
+> Typecasting is devided into two types:
+a) implicit - the interpreter does the conversion.
+    Example:
+        t = 10.5
+        r = 7 + 10.5
+        here 7 which is an integer will be converted to floating point value for addition.
+
+b) explicit - you do the conversion manually.
+> We use the following typecasting functions:
+    int() converts values to integer.
+    float() converts values to decimal figures.
+
+    with input() function.
+
+
+Exercise
+Write a program that takes the radius of a circle using input() function. 
+Calculate the Area and Circumference of a circle. Display the results,
+using print function.
+
+
+
+
+
+

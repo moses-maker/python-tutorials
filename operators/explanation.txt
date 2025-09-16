@@ -1,0 +1,40 @@
+OPERATORS
+> They assist in arithmetic and logical operations on values
+
+a) arithmetics operators
++ addition
+- subtration
+* multiplication
+/ division
+// floor division   25//2 = 12 gives you th e
+** exponent   2 ** 2  
+% modulus
+
+
+b) Comparison operators
+ > greater than
+ < less than
+ >= greater than or equal to
+ <= less than or equal to
+ != not equal to
+ == equal to
+ 
+
+c) Logical operators
+ and operators
+ or operators
+ not operators
+
+d) Assignment operators
+ = This is the symbol for assignment operators.
+We have compound assignment where assignment operators are 
+combined with arithmetic operators:
++= addition assignment
+-= subtration assignment
+*= multiplication assignment
+/= division assignment
+%= modulus assignment
+//= floor division assignment
+**= exponent assignment
+    
+

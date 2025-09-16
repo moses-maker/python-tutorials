@@ -1,0 +1,14 @@
+SETS
+> It is unordered collection with no duplicate items.
+> Uses:
+a) Membership testing 
+b) Eliminate duplicate entries.
+c) Support mathematical operations 
+    E.g. Union, intersection, difference, symmetric difference.
+> It is created using curly brackets e.g. {} or set() function,
+where inside is a comma-separated list of items.
+
+
+
+
+
