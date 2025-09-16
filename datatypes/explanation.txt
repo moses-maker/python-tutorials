@@ -1,0 +1,53 @@
+DATA TYPES
+> Data storage formats that specifies how values like numbers, 
+strings, characters are stored and manipulated within a program.
+
+> Types of data Types
+a) Numbers
+This includes:
+i) Integers
+    int()
+    type() 
+    - They are whole numbers without decimals. Examples: 5000, 200, 150.
+    - They are represented by the following class in python - int()
+    - To convert a value that has decimal to Integers we say:
+        t = 12.95
+        y = int(t)
+
+ii) Floating point numbers
+    - These are numbers with decimals. Examples: 78.95, 453.93, 245.35
+    - They are represented by the following class in python - float()
+    - To convert a value to floating point figure we say:
+        t = 78
+        y = float(t)
+
+b) strings
+> It is a sequence of one or more characters, which includes letters
+, numbers and other types of characters
+> A string can contain the spaces between the words.
+> String can be represented using
+
+i) single - ' '
+ii)double triple or single triple quotes. 
+    """
+    Text appear here.   
+    
+    """
+    
+    '''    
+    Text appear here.
+    
+    '''
+
+c) Boolean
+> They are binary datatypes. They include( True and False).
+> They are the outcome of evaluating control flow 
+statements, comparison and logical operators.
+
+print(True and False)
+
+
+d) None
+>It is a special datatype that indicates the absence of a value.
+> Example:   total = None.
+

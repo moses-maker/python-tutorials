@@ -1,0 +1,29 @@
+EXERCISE 1.
+
+1. Predict the output of the following code.
+n/b: Include a comment detailing your answer.
+i=1
+while True:
+    if i%2 == 0:
+        break
+    print(i)
+    i += 1
+
+2. Judge the output of the following code snippet.
+n/b: Include a comment detailing your answer?
+
+for i in range(10):
+    if i == 5:
+        break
+    else:
+        print(i)
+
+3. Predict the output of the following code snippet.
+n/b: Give an explanation in form of a comment
+while True:
+    print(True)
+        break
+
+
+4. Write a program that uses a while loop to add up all the even 
+numbers between 100 and 200

@@ -1,0 +1,5 @@
+POLYMORPHISM
+> This involves having multiple clases where each class implements the same variables and
+methods in different ways.
+> It takes advantages of inheritance to make that happen.
+> 

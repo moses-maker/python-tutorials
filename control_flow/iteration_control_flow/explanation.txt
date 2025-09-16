@@ -1,0 +1,62 @@
+ITERATION STATEMENTS
+> Iteration statements are used to execute a statement a particular number
+of times, upon a condition evaluating to True.
+
+> Examples:
+    a) while loop
+    b) for loop
+
+a) while loop
+    the syntax is:
+
+    control_variable  = value
+    while condition:
+        statement(s)
+        increment_statement(s)
+
+    i) control_variable
+    > It is updated by the new value everytime new Iteration occurs
+
+    ii) while condition:
+    >The loop will continue iterating as long as the condition is True.
+    >When the condition is True, the statement will be executed.
+    >After that, the increment_statement is executed. The value from it
+    is used to update the control_variable, which intern determines if
+    the condition is True or False.
+    >Itcan result to infinit loop.
+
+
+b)for loop
+> The for loop is a controlled loop, it cannot be infinite.
+> The syntax:
+        for iteration_variable in sequence:
+            statement(s)
+
+> membership operators include:
+    i) in
+    ii) not in
+
+> It starts with the keyword for followed by iteration_variable
+> The iteration_variable can be any valid variable name.
+> sequence  - range()
+    * the sequence includes: range(start, stop, step)
+    * range(start, stop, step)
+        - start > the start value indicate the beginning of the 
+        sequence. 0 is the default
+        - stop > generates numbers up to this value but not 
+        including the value itself.
+        - step > indicates the difference between every two 
+        consecutive numbers in sequence.
+
+THE CONTINUE AND BREAK STATEMENT
+a) break
+> It is used to stop the execution of the loop.
+> When a break statement is encountered in a loop, the loop
+stops.
+
+b) continue
+> Continue is used to give an indication hat certain part
+of the program has been reached but does not exit the loop
+
+
+

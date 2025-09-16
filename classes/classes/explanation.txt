@@ -1,0 +1,296 @@
+OBJECT ORIENTED
+> The concept of object oriented programming originated from the idea that we use objecs to model real world things 
+that we want to present inside our programs and provide a simple way to access thier functionality that would be 
+hard or impossible to utilize
+> Object oriented programs are easier tp program, easier to modify and maintain than a non-object oriented program.
+>It results to 
+    a) Code reuse
+    b) Clearner code
+    c) Better achitecture
+    d) Abstraction layers
+    e) Fewer program bugs.
+
+
+Classes and Objects
+> class - it is a blueprint from which individual objects are created.
+> object - is abundle of related state(variable) and behaviour(methods/function)
+> method - it is a function declared inside a class.
+
+
+Class declaration
+> A class is created using the class keyword, followed by class name, then full colon.
+> Names of class uses camel system which states that the first letter must be capital letter.
+
+class ClassName:
+    statements
+
+
+class Mobile:
+    def __init__(self):
+        print("This message is from Constructor Method")
+
+    def recieve_message(self):
+        print("Recieve message using Mobile")
+
+    def send_message(self):
+        print("Send message using Mobile")
+
+        
+
+> The class name must be a valid identifier. 
+> The statements includes: variables, methods
+
+
+Object creation or instantiation.
+> Object refers to a particular instance of a class where the object contains
+variables and methods defined in the class.
+> Class objects supports two kinds of operations 
+    a) instantiation
+        > To create an object you have to create an instance variable and then assign 
+        an assignment operator and finally class name at the mergin through a process called instantiation
+
+        > The syntax for class instantiation is 
+
+            object_name =  ClassName(argument1, argument2, argument3)
+
+        > class instantiation uses a function notation, wherein the class name is follwed by
+         parenthesis() as if it were a function e.g.
+            sumsung = Mobile()
+
+        
+        > The above statement creates a new object for the class Mobile and assigns this object to the variable sumsung.
+        
+        > You can specify any number of arguments during instantiation of the class object based on the parameters supplied in the
+        constructor method.
+
+        > In this case sumsung is an object created from the class mobile. In order to use or call methods in a 
+        class we have to reference 
+
+    b) attribute referencing
+        > To reference attributes a class we use the - dot operator(.)
+        > Members of a class(variables and methods) are called class attributes. To access them you have to do what
+        is called attribute referencing.
+        > Attribute referencing refers to any name(variables or methods) following a dot.
+        > The members of a class are referenced by objects and it is termed as attribute referencing.
+        > Their two types of atribute referencing
+            i) data/variable referencing
+                > variables defined within a method are called instance variables,are used to store data values.
+                > To access the data values assigned to class variables and instance variables
+                    object_name.data_attribute_name
+                > To assign a value you use the following syntax
+                    object_name.data_attribute_name = value
+
+                    n/b : value can integers, floats, string type or another object itself.
+
+            ii) method referencing
+                > function defined inside a class is called a method.
+                > To access a method inside a class we use the following syntax
+                    object_name.method_attribute_name()
+
+
+The Constructor method
+> In classes and particularly python, there is a special method called constructor method, which can be only one in a class.
+> The syntax for constructor method is __init__() method. It is usually the first method definition of a class.
+
+    def __init__(self, parameter1, parameter2, parameterN):
+        statement(s)
+
+
+
+
+    The parameters are optional. 
+    The characteristics of constructor method
+    a) Constructor method defines and initializes the instance variables.
+    b) It is invoked as soon as an object of a class is instantiated.
+    c) The __init__() method for a newly created object is automatically executed with all of its parameters.
+    d) The parameters for __init__() method are initialized with the arguments that you had passed during instantiationof the class 
+    object.
+    e) Methods found in a class and begins with a double underscore (__) are called special methodsas they have special meaning.
+    f) The number of arguments during the instantiation of the class object should be equivalnet to the number of parameters in 
+    __init__ method, excluding self parameter.
+    
+
+
+
+Variables inside a class
+
+a) instance variable
+    > variables declared inside the method( function inside a 
+    class)
+    > They usually have "self" keyword attached to them.
+    > THey are usually defined inside the constructor method
+        e.g. __init__()
+b) class variable
+    > These are variables that are shared among all members
+     of a class.
+    > They are defined within the class but outside any methods.
+    > They do not have "self" keyword.
+
+c) Local variable
+    > These are variables defined within a method and their scope
+     is limited to that method. 
+    > They are not accessible outside the method in which they are
+     defined.
+
+d) public variable
+    > These variables can be accessed from anywhere, both inside
+     and outside the class.
+
+    class Car:
+        def __init__(self, make, model):
+            self.make = make  # Public variable
+            self.model = model  # Public variable
+
+    car = Car("Toyota", "Corolla")
+    print(car.make)  # Accessible from outside the class
+    
+e) protected variable
+    > These variables should not be accessed directly from 
+    outside the class, but they can be accessed in subclass.
+    > They are prefixed with a single underscore ( _ ).
+    > This is just a convention and does not prevent access
+     from outside the class
+
+    class Car:
+            def __init__(self, make, model):
+                self._make = make  # Protected variable
+                self._model = model  # Protected variable
+
+    class SportsCar(Car):
+        def __init__(self, make, model, top_speed):
+            super().__init__(make, model)
+            self.top_speed = top_speed
+
+        def display(self):
+            print(f"{self._make} {self._model} with top speed {self.top_speed} km/h")
+
+    sports_car = SportsCar("Ferrari", "488", 330)
+    sports_car.display()
+
+f) private variable
+    > These variables are intended to be inaccessible and hidden from any code outside
+     the class.
+    > Variable can be accessed only through name mangling
+
+    class Car:
+        def __init__(self, make, model):
+            self.__make = make  # Private variable
+            self.__model = model  # Private variable
+    
+        def display(self):
+            print(f"Car make: {self.__make}, model: {self.__model}")
+
+    car = Car("Toyota", "Corolla")
+    car.display()
+
+    # The following will raise an AttributeError
+    # print(car.__make)
+
+    # Accessing private variable (not recommended)
+    print(car._Car__make)  # This works due to name mangling
+
+
+
+Types of methods in a class
+
+a) Instance method
+    > These are the most common type of methods in a class.
+    > hey take "self" as the first parameter, which is a reference
+     to the instance of the class.
+    > They can access and modify the instance's attributes and other methods.
+
+    class Car:
+        wheel = 7
+        def __init__(self, make, model):
+            self.make = make
+            self.model = model
+        def display_info(self):
+            print(f"Make: {self.make}, Model: {self.model}")
+    car = Car("Toyota", "Corolla")
+    car.display_info()  # Output: Make: Toyota, Model: Corolla
+
+b) class methods
+> These methods take "cls" as the first parameter, which is a reference to 
+the class itself.
+> They are defined using the @classmethod decorator.
+> They can access and modify class-level attributes e.g class variables
+> Class variable attributes are global 
+
+class Car:
+    wheels = 4  
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model   
+    @classmethod
+    def update_wheels(cls, number):
+        cls.wheels = number   
+    @classmethod
+    def display_wheels(cls):
+        print(f"All cars have {cls.wheels} wheels.")
+obj = Car("4 wheel", "Subaru")
+obj.update_wheels(3)
+Car.display_wheels()  # Output: All cars have 4 wheels.
+Car.update_wheels(6)
+Car.display_wheels()  # Output: All cars have 6 wheels.
+
+c) static methods
+> These methods do not take self or cls as the first parameter.
+> They are defined using the "@staticmethod" decorator.
+> They cannot modify the state of the instance or the class.
+> They are often utility functions related to the class but not 
+dependent on the class or instance state.
+
+class Car:
+    @staticmethod
+    def is_motor_vehicle():
+        return True  
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+print(Car.is_motor_vehicle())  # Output: True
+
+
+d) special(Dunder) methods
+> These methods have double underscores before and after their names
+(e.g., __init__, __str__, __repr__).
+> They allow instances of the class to interact with built-in Python
+ functions and operators.
+
+class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model 
+    def __str__(self):
+        return f"{self.make} {self.model}"
+car = Car("Toyota", "Corolla")
+print(car)  # Output: Toyota Corolla
+
+
+e) property method
+> These methods are used to define getters, setters, and deleters for
+ class attributes.
+> hey are defined using the @property decorator and related decorators 
+(@attribute_name.setter, @attribute_name.deleter).
+> IT makes access to a method attribute like a variable attribute
+
+class Car:
+    def __init__(self, make, model):
+        self._make = make
+        self._model = model
+    
+    @property
+    def make(self):
+        return self._make
+    
+    @make.setter
+    def make(self, value):
+        self._make = value
+    
+    @property
+    def model(self):
+        return self._model
+
+car = Car("Toyota", "Corolla")
+print(car.make)  # Output: Toyota
+car.make = "Honda"
+print(car.make)  # Output: Honda

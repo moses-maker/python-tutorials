@@ -1,0 +1,56 @@
+PYTHON INHERITANCE
+> It enables new classes to receive or inherit variables and methods
+ of existing class.
+
+Terms associated with Inheritance
+a) superclass/base class/ parent class
+    -   This is the class that other classes inherit from.
+
+b) derived class/ child class
+    -   This is the class that inherits the attributes(variables 
+        and methods) of parent class.
+
+
+The syntax for parent class 
+
+class ParentClass:
+    <statements_1>
+
+    <statement_2>
+
+The syntax of the child class
+
+class ChildClass(ParentClass):
+    <statements_1>
+
+    <statement_2>
+
+
+super() function
+- In single inheritance the parent class constructor is already used to initialize 
+the instance variables, so thier is no need for super() function
+- The situation you would want to use super() function is when you have child class
+variables and also you want to use parent class variables, in this case you would 
+call the parent class contructor using super to initialize the variables you want
+to use in child class. 
+- super() function is used in situation you have multiple inheritance.
+
+- Syntax used:
+class ChildClassName(ParentClassName):
+    def __init__(self, parent_class_parameters, child_class_parameters):
+        super().__init__(parent_class_parameters)
+        self.child_class_variable = child_class_parameters 
+
+Parent class method overried using super()
+- The super() function can b eused to access base 
+class methods without specifying the base class name.
+- The syntax for using the super() function to invoke
+ base class method is as follows:
+
+    super().invoke_base_class_method(argument(s))
+
+- The above expression should be used within a method 
+of the derived class. 
+
+
+

@@ -1,0 +1,15 @@
+Control flow statement involves three techniques
+
+a) Sequencing
+> computer runs your program in order from top to bottom.
+
+b) Iteration
+> This involves executing an instruction repeatedly 
+
+c) Selection
+> It specifies where to follow each path.
+
+algorithm - step by step instruction to complete a task, placed in a certain order.
+> algorithms can be a flowchart which helps ni visualizing the program.
+
+

@@ -1,0 +1,83 @@
+CONTROL FLOW STATEMENT
+> Execution usually happens sequentlially, from top to bottom.
+> You can use decison and looping control flow statement to break the flow of execution.
+> Control flow statement enables you to execute a certain block upon evaluation.
+> The execution of statement is determined by evaluation of a decision which can be boolean 
+expression either True/False.
+> Examples of control flow statements include:
+
+a)Decision control Flow statement
+> The execution of a block of statement under the if header depends on evaluation of a 
+conditional statement of which if it is True, the statement under it is executed, if false 
+the default condition is evaluated under which the statement get executed.
+
+> They include:
+i) if statement
+ii) if ...else statement
+iii) if ...elif ...else statement
+iv) Nested if statement
+
+i) if statement
+    if condition:
+        block/statement
+
+> In order for the block/statement to be executed the condition must be true.
+> If the condition is False the block/statement is skipped. 
+> Execution of the block/statement depends upon evaluation of the condition.
+> The block/statement is indented hence part of if block/statement.
+> The condition must be followed by full colon(:)
+
+
+ii) if ...else statement
+> It has two option in that in the situation the conditional statement in the  if header block is false, 
+the else part is evaluated and the statement under it is executed.
+
+if condition:
+    block of statement
+
+else:
+    block of statement
+
+> In order for a statement to belong to either if block or else block, it has to be indented inside it
+> The indentation is usually four spaces or one tab.
+
+
+iii) if ...elif ...else statement
+> This has three options to be considered that is (if) ,(elif) and (else). 
+> if the conditional statement on if header (if) is false, then the (elif) is considered also if the condition
+is false, now the default (else) part is considered.
+
+if condition:
+    block of statement
+
+elif condition:
+    block of statement
+
+else:
+    block of statement
+
+
+
+iv) Nested if statement
+> This is multiple if statements stacked inside each other. and evaluation happens in the order in which They
+are stacked.
+> In situation one (if) block is false, its (else) counterpart is evaluated and statement under it is 
+displayed.
+
+if condition:
+    statement block
+
+    if condition:
+        statement block
+
+        if condition:
+            statement block
+
+        else:
+            statement block
+    
+    else:
+        statement block
+
+else:
+    statement block

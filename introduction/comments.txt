@@ -1,0 +1,38 @@
+Comments 
+They are text that describe what the program is all about.
+
+They do not get executed by the interpreter.
+
+Thier are ways you include comments
+a) Single line comments
+    It is represented by # at the begin on the
+     line
+    
+    Example:   
+    # this is a single line comment
+    # this is a single line comment
+
+b) multiline comment
+    It is represented by 
+
+    """  
+    This double triple
+    multiline
+    comment 
+    """
+
+    '''
+    This single triple 
+    multiline
+    comment
+    '''
+    
+Commands.
+
+ctrl + c     copy 
+
+ctrl + v     pasting
+
+ctrl + x     cut
+
+ctrl + s     saving

@@ -1,0 +1,58 @@
+Questions
+
+Question 1
+Deduce the output of the following code.
+if False and False:
+    print(“And Operation”)
+elif True or False:
+    print(“Or operation”)
+else:
+    print(“Default case”)
+
+a. And Operation
+b. Or Operation
+c. Default Case
+d. B and C option
+
+Question 2
+The symbol that is placed at the end of if condition is
+
+a. ;
+b. :
+c. &
+d. ~
+
+Question 3
+Gauge the output of the following statement?
+int("65.43")
+
+a. Import error
+b. Value error
+c. Type error
+d. Name error
+
+
+Question 4
+Differentiate the syntax of if...else and if...elif...else with an example
+
+
+Question 5
+
+Write a program to read the Richter magnitude value from the user and display
+the result for the following conditions using if...elif...else statement.
+Richter Magnitude               Information
+> 1.0 and < 2.0                 Microearthquakes not felt or rarely felt
+> 2.0 and < 4.0                 Very rarely causes damage
+> 4.0 and < 5.0                 Damage done to weak buildings
+> 5.0 and < 6.0                 Cause damage to the poorly constructed building
+> 6.0 and < 7.0                 Causes damage to well-built structures
+> 7.0 and < 8.0                 Causes damage to most buildings
+> 8.0 and < 9.0                 Causes major destruction
+> 9.0                           Causes unbelievable damage
+
+
+
+
+
+
+

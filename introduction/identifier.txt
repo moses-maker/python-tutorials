@@ -1,0 +1,93 @@
+IDENTIFIER
+> It is  a name you guess, that is used as in naming things in python 
+    e.g. Variables names, user defined functions, class names 
+> It is used as an address for memory locations.
+> In order to create valid identifier the following rules must be followed.
+> Rules for naming Identifier:
+
+a) Identifier can be a combination of letters (A-Z, a-z, digits, underscore).
+    Exception:
+        i) You can not begin with a digits but the digit can be at the end.
+            90total        total90
+            t 
+        ii)Underscore can begin and also applied between two words 
+            _result       total_result   total_marks_2024  
+        
+        iii) spaces between two or three words is not allowed.
+
+
+        Examples:
+
+
+b) Identifier names should be meaningful, relating to what you are coding.
+
+
+c) Special symbols cannot be part of an identifier.
+    Examples: @, $, %, !, ^, &, *, (), =
+    total@
+                      
+d) Identifier can be capital or small individual lettters of alphabet.
+    Example: a  or  A
+
+e) Reserverd words.
+    - These are words with special meaning in python, they cannot be used individually
+    as identifiers, instead combine with another word.
+
+    print, input, if, else, for, wile, True, False, and or, not, 
+
+
+Task: Create 10 identifier of your choice.
+1.
+2. 
+3. 
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+
+
+
+
+VARIABLES
+> It is an address to a memory location.
+> It is used to retrieve values from the memory location
+
+>Three items are needed
+1. identifier
+2. assignment operator (=)
+3. value - numbers, strings
+
+Syntax:
+    valid_identifier = values
+
+    a) valid_identifier 
+    represent the valid name you have created following the 
+    rules for naming identifier.
+
+    b) Assignment oprator ( = )
+    It is used to take values from the right and store on the
+    storage location represented by the address(valid_identifier)
+    on the left.
+
+        
+Retrieve values
+> To retrieve values from memory location we use 
+print()  function which acts as a messenger that retrieve 
+values from memory location whose address is the variable name
+
+The syntax: 
+    print(variable_name)   
+
+
+
+
+
+
+
+
+
+
+    

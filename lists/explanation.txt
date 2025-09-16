@@ -1,0 +1,52 @@
+LISTS
+Variables usually hold one value but sometime you would want a variable to hold more
+ than one value. 
+This is achieved by the use of lists.
+List - is a container that holds a number of values.
+
+list_variable_name = [item1, item2, item3]
+
+Terms associated with lists
+a) items - values/elements stored in a list are called items. 
+All items in a list are a signed to a single variable.
+b) index - items in a list are stored according to certain position 
+denoted as index position.
+> These index position are counted starting at 0-1000.
+ 
+List syntax:
+> List is created with two square brackets - [ ]
+> Items are stored inside the list brackets
+ Example:   list_name = [item_1, item_2, item_n]
+> List can store combination or individual groups of integers, floating point values, strings or boolean.
+indexing methods
+Forward indexing(left to right) 0.....
+Reverse indexing(right to left) -1......
+
+Retrieving from a list
+> An item in a list can be retrieved individually through its 
+index position which starts at 0-N
+Example;list_name=[35, 67, 43, 98, 54]   
+        b = list_name[index]  b = list_name[7]
+           print(b)
+
+> we can also use reverse indexing to retrieve items from a list
+e.g -1, -2, -3
+
+Modifying a list
+Lists are mutable because items in alist can be altered 
+list_name[index] = "new item"
+
+Slicing
+> This is where a part of the list is extracted by specifying index range along with the colon(:)
+
+    list_name[start_index:stop_index, step_value]
+
+
+
+
+    
+
+
+
+
+

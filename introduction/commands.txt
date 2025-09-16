@@ -1,0 +1,73 @@
+cmd commands
+
+a) dir 
+- This command is used to list the folders and files in the current directory.
+- Another name for a folder is - directory.
+- Example:
+
+        C:\Users\moses>dir
+
+        - it will list all the contents found inside "moses" directory/folder.
+
+        - Current directory is the name just before ">" 
+
+        - "Users" is a root folder where every account represent folders resides.
+
+        - Example: inside the root folder "Users" we have an account represented by a folder
+          called "moses".
+
+- Whenever you see "<DIR>" just before the names it means the names following this flag
+is a folder/directory.
+
+b) cls
+- This command is used to clear the screen.
+- To use it type the following command.
+- Example:  
+            C:\Users\moses>cls
+
+c) cd 
+- This command is used for navigation, it stands for "current directory", it is used to change
+the current directory, to the one specified after the command.
+        C:\Users\moses>cd <Folder>
+
+        <folder> - this can be any folder.
+
+        C:\Users\moses>cd Desktop   or C:\Users\moses>cd Documents
+
+        You will get > 
+
+        C:\Users\moses\Desktop>  or C:\Users\moses\Documents>
+
+        here "Desktop" and "Documents" are the new current folders since they are followed by
+        ">"
+
+
+- To navigate backwards that is go back to previous folder we use the "cd .."
+        C:\Users\moses\Desktop> cd ..
+
+        C:\Users\moses>
+
+
+d) mkdir/md
+- This command stands for "make directory/folder".
+- It is used to create a folder/directory.
+     C:\Users\moses\Desktop>mkdir <folder name>
+
+      C:\Users\moses\Desktop>mkdir py
+
+       C:\Users\moses\Desktop>md p1 p2 
+       "md" - creates multiple folders at the same time.
+
+
+e) echo command
+- This command is used to create a file.
+- Example:  
+             C:\Users\moses\Desktop\py>echo > intro.txt
+
+To run python programs, type the following commands
+    python filename.py
+
+    python files have an extension of ".py"
+
+
+
